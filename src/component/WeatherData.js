@@ -12,10 +12,10 @@ const WeatherData = (props) => {
                 <b>Longitude :</b> {props.weatherData.coord.lon} 
               </div>
               <div className='weatherPoints'>
-                <b>Main Weather :</b> {props.weatherData.coord.lon}
+                <b>Main Weather :</b> {props.weatherData.weather[0].main}
               </div>
               <div className='weatherPoints'>
-                <b>Weather Description :</b> {props.weatherData.coord.lon}
+                <b>Weather Description :</b> {props.weatherData.weather[0].description}
               </div>
               <div className='weatherPoints'>
                 <b>Current Temperature :</b> {props.weatherData.main.temp} Degrees Celcius
